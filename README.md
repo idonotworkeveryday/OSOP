@@ -1,2 +1,3 @@
 # OSOP
-A network protocol like TCP/UDP but it combines both speed and reliability.
+
+A network protocol like TCP/UDP but it combines both speed and reliability. OSOP (Optimized Secure Ordered Protocol) delivers low-latency, secure, and efficient data transfer by batching multiple packets into a single unit with a unique BatchID and per-packet sequence numbers. It supports selective retransmission of lost packets, priority-based batching for critical messages, lightweight compression, and fast authenticated encryption to prevent tampering. Adaptive batching ensures optimal throughput within safe MTU limits, while 0-RTT-style sending allows immediate transmission when keys are pre-shared. By merging the speed of UDP with the reliability of TCP, OSOP is designed for modern real-time applications requiring both performance and security.

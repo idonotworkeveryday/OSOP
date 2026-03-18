@@ -1,3 +1,24 @@
-# OSOP
 
-A network protocol like TCP/UDP but it combines both speed and reliability. OSOP (Optimized Secure Ordered Protocol) delivers low-latency, secure, and efficient data transfer by batching multiple packets into a single unit with a unique BatchID and per-packet sequence numbers. It supports selective retransmission of lost packets, priority-based batching for critical messages, lightweight compression, and fast authenticated encryption to prevent tampering. Adaptive batching ensures optimal throughput within safe MTU limits, while 0-RTT-style sending allows immediate transmission when keys are pre-shared. By merging the speed of UDP with the reliability of TCP, OSOP is designed for modern real-time applications requiring both performance and security.
+# OSOP - Optimized Secure Ordered Protocol
+
+OSOP is a **high-speed, reliable network protocol** inspired by TCP/UDP, designed for **low-latency, secure, priority-based communication**. It combines batching, lightweight compression, fast authenticated encryption, selective retransmission, and dynamic MTU adjustment for maximum throughput.
+
+## Features
+
+- **Batch-based transmission** for efficiency
+- **Priority queues** (High / Medium / Low)
+- **Selective retransmission** for lost packets
+- **Compression** via Zstandard (zstd)
+- **Encryption** via ChaCha20-Poly1305 (AEAD)
+- **Dynamic MTU adjustment** for optimal throughput
+- **Simulated packet loss** for testing reliability
+- Fully self-contained Python prototype
+
+## Requirements
+
+- Python 3.10+  
+- `pycryptodome`  
+- `zstandard`
+
+```bash
+pip install -r requirements.txt

@@ -22,3 +22,6 @@ OSOP is a **high-speed, reliable network protocol** inspired by TCP/UDP, designe
 
 ```bash
 pip install -r requirements.txt
+```
+(For this is just a demo, I will try to improve it.)
+(You are also allowed to fork it and make it better*)
